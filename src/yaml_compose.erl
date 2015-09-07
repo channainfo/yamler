@@ -31,7 +31,7 @@
 
 -record(state, {
 				events :: [yaml_libyaml:event()],
-				anchors :: dict:dict(),
+				anchors :: dict:new(),
 				schema :: atom(),
 				schema_state :: term(),
 				sort_mappings :: boolean()
